@@ -8,7 +8,7 @@ services:
     plan: free
     envVars:
       - key: PROJECT_NAME
-        value: Udyam Gram Backend
+        value: Udyam Setu Backend
       - key: DATABASE_NAME
         value: udyam_gram
       - key: ALGORITHM

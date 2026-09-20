@@ -2,7 +2,7 @@ import os
 try:
     from pydantic_settings import BaseSettings
     class Settings(BaseSettings):
-        PROJECT_NAME: str = "Udyam Gram Backend"
+        PROJECT_NAME: str = "Udyam Setu Backend"
         MONGODB_URL: str = "mongodb://localhost:27017"
         DATABASE_NAME: str = "udyam_gram"
         MOCK_DATA_ZIP: str = os.getenv("MOCK_DATA_ZIP", "")
@@ -26,7 +26,7 @@ try:
 except ImportError:
     from pydantic import BaseModel
     class Settings(BaseModel):
-        PROJECT_NAME: str = os.getenv("PROJECT_NAME", "Udyam Gram Backend")
+        PROJECT_NAME: str = os.getenv("PROJECT_NAME", "Udyam Setu Backend")
         MONGODB_URL: str = os.getenv("MONGODB_URL", "mongodb://localhost:27017")
         DATABASE_NAME: str = os.getenv("DATABASE_NAME", "udyam_gram")
         MOCK_DATA_ZIP: str = os.getenv("MOCK_DATA_ZIP", "")

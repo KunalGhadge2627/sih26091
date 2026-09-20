@@ -50,5 +50,5 @@ async def root():
         "app_name": settings.PROJECT_NAME,
         "version": "1.0.0",
         "docs_url": "/docs",
-        "message": "Udyam Gram Phase 1 Backend Running Successfully"
+        "message": "Udyam Setu Phase 1 Backend Running Successfully"
     }

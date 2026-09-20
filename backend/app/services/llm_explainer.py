@@ -38,7 +38,7 @@ STATIC_EXPLAINER_CARDS = [
     }
 ]
 
-SYSTEM_PROMPT = """You are the Udyam Gram Rural Business Analyst & Explainer.
+SYSTEM_PROMPT = """You are the Udyam Setu Rural Business Analyst & Explainer.
 Your role is strictly as an Analyst and Explainer — NOT a Database, Calculator, or Feasibility Decision-Maker.
 Rules:
 1. Use ONLY the supplied pre-computed evidence and numbers provided in the input prompt.

@@ -76,7 +76,7 @@ export const LandingPage = () => {
             </h1>
 
             <p className="text-base text-gray-600 leading-relaxed max-w-2xl">
-              {t("Udyam Gram is a pre-investment advisory platform that tells a rural entrepreneur whether a specific business idea is viable at their village location, whether they are personally ready, and whether they can afford financing — before debt is taken.")}
+              {t("Udyam Setu is a pre-investment advisory platform that tells a rural entrepreneur whether a specific business idea is viable at their village location, whether they are personally ready, and whether they can afford financing — before debt is taken.")}
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -229,7 +229,7 @@ export const LandingPage = () => {
             "{t("Credit should support a good decision—not create an avoidable burden.")}"
           </blockquote>
           <p className="text-xs text-blue-200 max-w-xl mx-auto leading-relaxed">
-            {t("Taking a loan for an unviable business in a low-demand village creates severe debt distress. Udyam Gram helps rural entrepreneurs verify feasibility before signing loan documents.")}
+            {t("Taking a loan for an unviable business in a low-demand village creates severe debt distress. Udyam  helps rural entrepreneurs verify feasibility before signing loan documents.")}
           </p>
         </div>
       </section>
@@ -239,7 +239,7 @@ export const LandingPage = () => {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <Logo textClassName="text-lg font-bold text-white" />
           <div>{t("SIH26091 · Hyper-Local Rural Business Feasibility Prototype")}</div>
-          <div>&copy; 2026 Udyam Gram. {t("All rights reserved.")}</div>
+          <div>&copy; 2026 Udyam Setu. {t("All rights reserved.")}</div>
         </div>
       </footer>
     </div>

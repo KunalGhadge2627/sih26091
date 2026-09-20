@@ -1,6 +1,6 @@
-# Udyam Gram — Backend (Phases 1 & 2)
+# Udyam Setu — Backend (Phases 1 & 2)
 
-Udyam Gram is a **hyper-local rural business feasibility and financial-literacy platform**. It acts as a pre-investment advisory tool that evaluates whether a rural business idea is viable at a specific village-level location, whether the entrepreneur is personally ready, and whether they can afford the financing — before taking on debt.
+Udyam Setu is a **hyper-local rural business feasibility and financial-literacy platform**. It acts as a pre-investment advisory tool that evaluates whether a rural business idea is viable at a specific village-level location, whether the entrepreneur is personally ready, and whether they can afford the financing — before taking on debt.
 
 This repository contains the **Phase 1 Foundation & Phase 2 Intelligence Layer**, including data models, database seeding for 10 real Indian villages across 8 states, 50 unique market datasets, deterministic calculation engines, LLM explanations, IndicTrans2 translation, Whisper speech transcription, JWT authentication, and complete REST API surface.
 
