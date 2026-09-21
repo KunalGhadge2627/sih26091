@@ -9,7 +9,11 @@ export const Logo = ({ className = "h-8", textClassName = "text-xl font-bold tex
         U
       </div>
       <span className={textClassName}>
+<<<<<<< Updated upstream
         Udyam Gram <span className="text-xs font-semibold px-2 py-0.5 bg-primary-50 text-primary-700 rounded border border-primary-200 uppercase tracking-wider">{t('PROTOTYPE')}</span>
+=======
+        UdyamSetu <span className="text-xs font-semibold px-2 py-0.5 bg-primary-50 text-primary-700 rounded border border-primary-200 uppercase tracking-wider">{t('PROTOTYPE')}</span>
+>>>>>>> Stashed changes
       </span>
     </div>
   );

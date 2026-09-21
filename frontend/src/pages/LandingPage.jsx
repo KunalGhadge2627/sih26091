@@ -76,7 +76,11 @@ export const LandingPage = () => {
             </h1>
 
             <p className="text-base text-gray-600 leading-relaxed max-w-2xl">
+<<<<<<< Updated upstream
               {t("Udyam Gram is a pre-investment advisory platform that tells a rural entrepreneur whether a specific business idea is viable at their village location, whether they are personally ready, and whether they can afford financing — before debt is taken.")}
+=======
+              {t("UdyamSetu is a pre-investment advisory platform that tells a rural entrepreneur whether a specific business idea is viable at their village location, whether they are personally ready, and whether they can afford financing — before debt is taken.")}
+>>>>>>> Stashed changes
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -239,7 +243,11 @@ export const LandingPage = () => {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <Logo textClassName="text-lg font-bold text-white" />
           <div>{t("SIH26091 · Hyper-Local Rural Business Feasibility Prototype")}</div>
+<<<<<<< Updated upstream
           <div>&copy; 2026 Udyam Gram. {t("All rights reserved.")}</div>
+=======
+          <div>&copy; 2026 UdyamSetu. {t("All rights reserved.")}</div>
+>>>>>>> Stashed changes
         </div>
       </footer>
     </div>

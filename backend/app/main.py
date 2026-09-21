@@ -45,5 +45,9 @@ async def root():
         "app_name": settings.PROJECT_NAME,
         "version": "1.0.0",
         "docs_url": "/docs",
+<<<<<<< Updated upstream
         "message": "Udyam Gram Phase 1 Backend Running Successfully"
+=======
+        "message": "UdyamSetu Phase 1 Backend Running Successfully"
+>>>>>>> Stashed changes
     }

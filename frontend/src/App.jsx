@@ -22,7 +22,11 @@ const ProtectedRoute = ({ children }) => {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50 text-xs font-semibold text-gray-500">
+<<<<<<< Updated upstream
         Loading Udyam Gram...
+=======
+        Loading UdyamSetu...
+>>>>>>> Stashed changes
       </div>
     );
   }
