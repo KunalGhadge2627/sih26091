@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import os
 try:
     from pydantic_settings import BaseSettings
@@ -43,5 +44,43 @@ except ImportError:
         BHASHINI_INFERENCE_API_KEY: str = os.getenv("BHASHINI_INFERENCE_API_KEY", "")
         BHASHINI_SERVICE_ID: str = os.getenv("BHASHINI_SERVICE_ID", "ai4bharat/indictrans-v2-all-gpu--t4")
         BHASHINI_ENDPOINT: str = os.getenv("BHASHINI_ENDPOINT", "https://dhruva-api.bhashini.gov.in/services/inference/pipeline")
+=======
+from pydantic_settings import BaseSettings, SettingsConfigDict
+
+>>>>>>> Stashed changes
+
+class Settings(BaseSettings):
+    PROJECT_NAME: str = "UdyamSetu Backend"
+
+    MONGODB_URL: str ="mongodb://nimishsjadhav08_db_user:Nimish@ac-rean4cq-shard-00-00.yn9o2rz.mongodb.net:27017,ac-rean4cq-shard-00-01.yn9o2rz.mongodb.net:27017,ac-rean4cq-shard-00-02.yn9o2rz.mongodb.net:27017/UdyamSetu?tls=true&replicaSet=atlas-714hlb-shard-0&authSource=admin&retryWrites=true&w=majority"
+    DATABASE_NAME: str = "UdyamSetu"
+
+    MOCK_DATA_ZIP: str = ""
+
+    SECRET_KEY: str = "udyam_gram_super_secret_jwt_key_change_in_production"
+    ALGORITHM: str = "HS256"
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 1440
+
+    ANTHROPIC_API_KEY: str = ""
+    LLM_MODEL_NAME: str = "claude-3-5-sonnet-20241022"
+
+    SARVAM_API_KEY: str = ""
+    SARVAM_ENDPOINT: str = "https://api.sarvam.ai/translate"
+    SARVAM_MODEL: str = "sarvam-translate:v1"
+
+    BHASHINI_USER_ID: str = ""
+    BHASHINI_API_KEY: str = ""
+    BHASHINI_INFERENCE_API_KEY: str = ""
+    BHASHINI_SERVICE_ID: str = "ai4bharat/indictrans-v2-all-gpu--t4"
+    BHASHINI_ENDPOINT: str = (
+        "https://dhruva-api.bhashini.gov.in/services/inference/pipeline"
+    )
+
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+        extra="ignore",
+    )
+
 
 settings = Settings()

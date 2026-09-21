@@ -10,7 +10,15 @@ def test_health_check_endpoint():
     assert response.status_code == 200
     data = response.json()
     assert data["status"] == "online"
+<<<<<<< HEAD
     assert "Udyam Setu" in data["app_name"]
+=======
+<<<<<<< Updated upstream
+    assert "Udyam Gram" in data["app_name"]
+=======
+    assert "UdyamSetu" in data["app_name"]
+>>>>>>> Stashed changes
+>>>>>>> origin/development
 
 def test_location_directory_uses_named_blocks_and_villages():
     blocks = client.get("/locations/blocks", params={
