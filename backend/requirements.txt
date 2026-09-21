@@ -9,4 +9,5 @@ bcrypt
 httpx
 anthropic
 pytest
-python-multipartemail-validator
+python-multipart
+email-validator
