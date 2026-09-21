@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: udyam-gram-backend
+    name: udyam-setu-backend
     runtime: python
     rootDir: backend
     buildCommand: pip install -r requirements.txt
@@ -10,7 +10,7 @@ services:
       - key: PROJECT_NAME
         value: Udyam Setu Backend
       - key: DATABASE_NAME
-        value: udyam_gram
+        value: udyam_setu
       - key: ALGORITHM
         value: HS256
       - key: ACCESS_TOKEN_EXPIRE_MINUTES

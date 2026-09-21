@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+motor
+pymongo
+PyJWT
+bcrypt
+httpx
+anthropic
+pytest
+python-multipart

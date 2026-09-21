@@ -3,8 +3,8 @@ try:
     from pydantic_settings import BaseSettings
     class Settings(BaseSettings):
         PROJECT_NAME: str = "Udyam Setu Backend"
-        MONGODB_URL: str = "mongodb://localhost:27017"
-        DATABASE_NAME: str = "udyam_gram"
+        MONGODB_URL: str = "mongodb://nimishsjadhav08_db_user:Nimish@ac-rean4cq-shard-00-00.yn9o2rz.mongodb.net:27017,ac-rean4cq-shard-00-01.yn9o2rz.mongodb.net:27017,ac-rean4cq-shard-00-02.yn9o2rz.mongodb.net:27017/UdyamSetu?tls=true&replicaSet=atlas-714hlb-shard-0&authSource=admin&retryWrites=true&w=majority"
+        DATABASE_NAME: str = "UdyamSetu"
         MOCK_DATA_ZIP: str = os.getenv("MOCK_DATA_ZIP", "")
         SECRET_KEY: str = "udyam_gram_super_secret_jwt_key_change_in_production"
         ALGORITHM: str = "HS256"
