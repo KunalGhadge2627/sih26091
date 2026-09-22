@@ -1,4 +1,9 @@
 import os
+from dotenv import load_dotenv
+
+# Load .env BEFORE any os.getenv() calls
+load_dotenv()
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
@@ -21,15 +26,13 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-# CORS — reads ALLOWED_ORIGINS env var (comma-separated URLs).
-# Falls back to ["*"] for local development if the variable is not set.
-_raw_origins = os.getenv("ALLOWED_ORIGINS", "")
-allowed_origins = [o.strip() for o in _raw_origins.split(",") if o.strip()] or ["*"]
-
+# CORS — allow all origins for development.
+# Using allow_credentials=False with wildcard is valid per CORS spec.
+# Auth uses Bearer tokens (Authorization header), not cookies, so credentials mode is not needed.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=allowed_origins,
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )

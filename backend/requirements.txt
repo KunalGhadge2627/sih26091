@@ -11,3 +11,4 @@ anthropic
 pytest
 python-multipart
 email-validator
+python-dotenv
